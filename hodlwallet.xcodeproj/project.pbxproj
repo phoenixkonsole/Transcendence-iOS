@@ -53,6 +53,19 @@
 		22C431341DF89DFE0017CAEA /* BRCoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431331DF89DFE0017CAEA /* BRCoderTests.swift */; };
 		22C431361DF8A6DF0017CAEA /* BRAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */; };
 		22E773041EE7813000397E0E /* Bonjour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E773031EE7813000397E0E /* Bonjour.swift */; };
+		5AA31E272309AD7E00749434 /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E0E2309AD7E00749434 /* keccak.c */; };
+		5AA31E282309AD7E00749434 /* aes_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E102309AD7E00749434 /* aes_helper.c */; };
+		5AA31E292309AD7E00749434 /* simd.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E132309AD7E00749434 /* simd.c */; };
+		5AA31E2A2309AD7E00749434 /* luffa.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E142309AD7E00749434 /* luffa.c */; };
+		5AA31E2B2309AD7E00749434 /* blake.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E152309AD7E00749434 /* blake.c */; };
+		5AA31E2C2309AD7E00749434 /* cubehash.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E1B2309AD7E00749434 /* cubehash.c */; };
+		5AA31E2D2309AD7E00749434 /* jh.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E1C2309AD7E00749434 /* jh.c */; };
+		5AA31E2E2309AD7E00749434 /* shavite.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E1D2309AD7E00749434 /* shavite.c */; };
+		5AA31E2F2309AD7E00749434 /* groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E1E2309AD7E00749434 /* groestl.c */; };
+		5AA31E302309AD7E00749434 /* bmw.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E1F2309AD7E00749434 /* bmw.c */; };
+		5AA31E312309AD7E00749434 /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E242309AD7E00749434 /* skein.c */; };
+		5AA31E322309AD7E00749434 /* echo.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E252309AD7E00749434 /* echo.c */; };
+		5AA31E332309AD7E00749434 /* quark.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E262309AD7E00749434 /* quark.c */; };
 		7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */; };
 		751734B91DAC941E00193C87 /* sec-sub-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD8BE1DAA16820075898E /* sec-sub-1.c */; };
 		752438751DAAC50800844BEC /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD6761DAA0E400075898E /* alloc.c */; };
@@ -655,6 +668,32 @@
 		22C431331DF89DFE0017CAEA /* BRCoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRCoderTests.swift; sourceTree = "<group>"; };
 		22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRAPIClientTests.swift; sourceTree = "<group>"; };
 		22E773031EE7813000397E0E /* Bonjour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bonjour.swift; sourceTree = "<group>"; };
+		5AA31E0C2309AD7E00749434 /* quark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quark.h; sourceTree = "<group>"; };
+		5AA31E0E2309AD7E00749434 /* keccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keccak.c; sourceTree = "<group>"; };
+		5AA31E0F2309AD7E00749434 /* sph_bmw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_bmw.h; sourceTree = "<group>"; };
+		5AA31E102309AD7E00749434 /* aes_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_helper.c; sourceTree = "<group>"; };
+		5AA31E112309AD7E00749434 /* sph_cubehash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_cubehash.h; sourceTree = "<group>"; };
+		5AA31E122309AD7E00749434 /* sph_blake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_blake.h; sourceTree = "<group>"; };
+		5AA31E132309AD7E00749434 /* simd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simd.c; sourceTree = "<group>"; };
+		5AA31E142309AD7E00749434 /* luffa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = luffa.c; sourceTree = "<group>"; };
+		5AA31E152309AD7E00749434 /* blake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blake.c; sourceTree = "<group>"; };
+		5AA31E162309AD7E00749434 /* sph_groestl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_groestl.h; sourceTree = "<group>"; };
+		5AA31E172309AD7E00749434 /* sph_shavite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_shavite.h; sourceTree = "<group>"; };
+		5AA31E182309AD7E00749434 /* sph_keccak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_keccak.h; sourceTree = "<group>"; };
+		5AA31E192309AD7E00749434 /* sph_luffa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_luffa.h; sourceTree = "<group>"; };
+		5AA31E1A2309AD7E00749434 /* sph_echo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_echo.h; sourceTree = "<group>"; };
+		5AA31E1B2309AD7E00749434 /* cubehash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cubehash.c; sourceTree = "<group>"; };
+		5AA31E1C2309AD7E00749434 /* jh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jh.c; sourceTree = "<group>"; };
+		5AA31E1D2309AD7E00749434 /* shavite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shavite.c; sourceTree = "<group>"; };
+		5AA31E1E2309AD7E00749434 /* groestl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = groestl.c; sourceTree = "<group>"; };
+		5AA31E1F2309AD7E00749434 /* bmw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bmw.c; sourceTree = "<group>"; };
+		5AA31E202309AD7E00749434 /* sph_simd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_simd.h; sourceTree = "<group>"; };
+		5AA31E212309AD7E00749434 /* sph_jh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_jh.h; sourceTree = "<group>"; };
+		5AA31E222309AD7E00749434 /* sph_skein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_skein.h; sourceTree = "<group>"; };
+		5AA31E232309AD7E00749434 /* sph_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_types.h; sourceTree = "<group>"; };
+		5AA31E242309AD7E00749434 /* skein.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = skein.c; sourceTree = "<group>"; };
+		5AA31E252309AD7E00749434 /* echo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = echo.c; sourceTree = "<group>"; };
+		5AA31E262309AD7E00749434 /* quark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quark.c; sourceTree = "<group>"; };
 		7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WalletManager+Auth.swift"; path = "src/WalletManager+Auth.swift"; sourceTree = "<group>"; };
 		7528D2971ECF655500925DBC /* PaymentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentProtocol.swift; path = src/PaymentProtocol.swift; sourceTree = "<group>"; };
 		752FB03B1DF8BE4B009086FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1787,6 +1826,37 @@
 			path = libbz2;
 			sourceTree = "<group>";
 		};
+		5AA31E0D2309AD7E00749434 /* sha3 */ = {
+			isa = PBXGroup;
+			children = (
+				5AA31E0E2309AD7E00749434 /* keccak.c */,
+				5AA31E0F2309AD7E00749434 /* sph_bmw.h */,
+				5AA31E102309AD7E00749434 /* aes_helper.c */,
+				5AA31E112309AD7E00749434 /* sph_cubehash.h */,
+				5AA31E122309AD7E00749434 /* sph_blake.h */,
+				5AA31E132309AD7E00749434 /* simd.c */,
+				5AA31E142309AD7E00749434 /* luffa.c */,
+				5AA31E152309AD7E00749434 /* blake.c */,
+				5AA31E162309AD7E00749434 /* sph_groestl.h */,
+				5AA31E172309AD7E00749434 /* sph_shavite.h */,
+				5AA31E182309AD7E00749434 /* sph_keccak.h */,
+				5AA31E192309AD7E00749434 /* sph_luffa.h */,
+				5AA31E1A2309AD7E00749434 /* sph_echo.h */,
+				5AA31E1B2309AD7E00749434 /* cubehash.c */,
+				5AA31E1C2309AD7E00749434 /* jh.c */,
+				5AA31E1D2309AD7E00749434 /* shavite.c */,
+				5AA31E1E2309AD7E00749434 /* groestl.c */,
+				5AA31E1F2309AD7E00749434 /* bmw.c */,
+				5AA31E202309AD7E00749434 /* sph_simd.h */,
+				5AA31E212309AD7E00749434 /* sph_jh.h */,
+				5AA31E222309AD7E00749434 /* sph_skein.h */,
+				5AA31E232309AD7E00749434 /* sph_types.h */,
+				5AA31E242309AD7E00749434 /* skein.c */,
+				5AA31E252309AD7E00749434 /* echo.c */,
+			);
+			path = sha3;
+			sourceTree = "<group>";
+		};
 		755CD3191DAA0A110075898E /* secp256k1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2780,6 +2850,9 @@
 		75DC77AB1DAA05B500932D9A /* breadwallet-core */ = {
 			isa = PBXGroup;
 			children = (
+				5AA31E262309AD7E00749434 /* quark.c */,
+				5AA31E0C2309AD7E00749434 /* quark.h */,
+				5AA31E0D2309AD7E00749434 /* sha3 */,
 				B1B07878206CEE24007D6F4A /* BRBech32.c */,
 				B1B07877206CEE24007D6F4A /* BRBech32.h */,
 				B145CF7B2065804A0029EA7D /* BRChainParams.h */,
@@ -3875,10 +3948,12 @@
 				CE45C1FD1E7650F5002C3847 /* KVStoreCoordinator.swift in Sources */,
 				754AE0BC1DFE8A46007FD001 /* BRCore.swift in Sources */,
 				22A9A94A1DF61945000F0016 /* BRCameraPlugin.swift in Sources */,
+				5AA31E272309AD7E00749434 /* keccak.c in Sources */,
 				CEC6AA3B1DEE4EB000EE5AFD /* CGRect+Additions.swift in Sources */,
 				CE45C1FB1E74F89C002C3847 /* WalletInfo.swift in Sources */,
 				CE14E40B1E4D881500AEA83A /* TransactionDetailCollectionViewCell.swift in Sources */,
 				CEE659E71F65A936001FF29D /* RetryTimer.swift in Sources */,
+				5AA31E332309AD7E00749434 /* quark.c in Sources */,
 				CE90571A1DFF18B2006BA848 /* ScanViewController.swift in Sources */,
 				CE20C8F61DBAF77D00C8397A /* UIViewController+BRWAdditions.swift in Sources */,
 				CEF3D2D91E8B3C380070178E /* BiometricsSpendingLimitViewController.swift in Sources */,
@@ -3912,6 +3987,7 @@
 				22A9A9491DF61945000F0016 /* BRBSPatch.swift in Sources */,
 				CE92F9F61DEDF6890046B516 /* UIViewControllerContextTransitioning+BRAdditions.swift in Sources */,
 				CEA362681E00EE320061FC0E /* CameraGuideView.swift in Sources */,
+				5AA31E2D2309AD7E00749434 /* jh.c in Sources */,
 				CE03EC741EF256AC0038E3A8 /* SimpleUTXO.swift in Sources */,
 				CEBF32F61DDCEAF900348FC6 /* TransactionsTableViewController.swift in Sources */,
 				CE124CFC1E68932C00DFA146 /* FeeUpdater.swift in Sources */,
@@ -3936,6 +4012,7 @@
 				788D9C5820AA47AE000F24F7 /* Square.swift in Sources */,
 				CE20C9171DBE6F2A00C8397A /* UIButton+BRWAdditions.swift in Sources */,
 				CEAA9E931DC110E70066731D /* WritePaperPhraseViewController.swift in Sources */,
+				5AA31E322309AD7E00749434 /* echo.c in Sources */,
 				CE92F9F41DED59E80046B516 /* UIView+AnimationAdditions.swift in Sources */,
 				CEEC70941E96A24F00EF788E /* DefaultCurrencyViewController.swift in Sources */,
 				CECB9DB61E4985CE0081A172 /* LoginBackgroundView.swift in Sources */,
@@ -3957,6 +4034,7 @@
 				CEF3D2DD1E8CBA790070178E /* LAContext+Extensions.swift in Sources */,
 				CECCE5AE1E04AD6300D99448 /* AddressCell.swift in Sources */,
 				CE6BCF5D1EE9E89A0029849C /* CustomTitleView.swift in Sources */,
+				5AA31E292309AD7E00749434 /* simd.c in Sources */,
 				CE2DC1391EBC36EE000FE727 /* Prompt.swift in Sources */,
 				CE83DE2A1E9EB7F600D07636 /* SendAmountCell.swift in Sources */,
 				22A9A9521DF61945000F0016 /* BRKVStorePlugin.swift in Sources */,
@@ -3969,7 +4047,9 @@
 				CE1280F61EEA855C00D27649 /* Date+Additions.swift in Sources */,
 				CED82D4E1E575A5500507A9B /* main.swift in Sources */,
 				CEEC708E1E954AAB00EF788E /* AboutCell.swift in Sources */,
+				5AA31E2B2309AD7E00749434 /* blake.c in Sources */,
 				22A9A9461DF61945000F0016 /* BRAPIClient.swift in Sources */,
+				5AA31E2E2309AD7E00749434 /* shavite.c in Sources */,
 				CEAA9E9B1DC2B9320066731D /* ConfirmPhrase.swift in Sources */,
 				75A2A7941DA5934300A983D8 /* AppDelegate.swift in Sources */,
 				CEEC70901E95D5C100EF788E /* PushNotificationsViewController.swift in Sources */,
@@ -4026,8 +4106,10 @@
 				CEB909FA1E5FF242001804DC /* RecoverWalletIntroViewController.swift in Sources */,
 				CE25BF911DF9ADE700BC67B6 /* UIImage+Utils.swift in Sources */,
 				CEBF33041DDE17A600348FC6 /* Transaction.swift in Sources */,
+				5AA31E282309AD7E00749434 /* aes_helper.c in Sources */,
 				CEAA9E911DC0FDFE0066731D /* UIViewPropertyAnimator+BRWAdditions.swift in Sources */,
 				22E773041EE7813000397E0E /* Bonjour.swift in Sources */,
+				5AA31E312309AD7E00749434 /* skein.c in Sources */,
 				CEAA9EA01DC2F9F50066731D /* UIFont+BRWAdditions.swift in Sources */,
 				CEC6AA491DEFD00100EE5AFD /* MenuButton.swift in Sources */,
 				CEF61B121ECF52C700C7EA6A /* AmountViewController.swift in Sources */,
@@ -4040,9 +4122,12 @@
 				CEEC70811E90C04700EF788E /* SeparatorCell.swift in Sources */,
 				CE20C8FE1DBB133A00C8397A /* SimpleRedux.swift in Sources */,
 				22122B721F0B8996000E9AB9 /* BRAPIClient+Events.swift in Sources */,
+				5AA31E2C2309AD7E00749434 /* cubehash.c in Sources */,
 				CE4B6C201E233C2C00CF935B /* UITableView+Additions.swift in Sources */,
 				CE760EDC1E561DF900EFAC2B /* SecurityCenterViewController.swift in Sources */,
 				CEEC70861E94397D00EF788E /* UserDefaults+Additions.swift in Sources */,
+				5AA31E2F2309AD7E00749434 /* groestl.c in Sources */,
+				5AA31E302309AD7E00749434 /* bmw.c in Sources */,
 				22A9A9501DF61945000F0016 /* BRHTTPServer.swift in Sources */,
 				22A9A9531DF61945000F0016 /* BRLinkPlugin.swift in Sources */,
 				CE3D4C571EF5D5740016B1C8 /* ReachabilityMonitor.swift in Sources */,
@@ -4063,6 +4148,7 @@
 				CE6DCC271E6108D50044257B /* EnterPhraseCell.swift in Sources */,
 				CE760EDD1E561DF900EFAC2B /* UpdatePinViewController.swift in Sources */,
 				22A9A9481DF61945000F0016 /* BRBitID.swift in Sources */,
+				5AA31E2A2309AD7E00749434 /* luffa.c in Sources */,
 				CEBF32F41DDCE12900348FC6 /* AccountFooterView.swift in Sources */,
 				CE9057181DFF0FA8006BA848 /* String+Additions.swift in Sources */,
 				CED341331EF5A5C00014912A /* InAppAlert.swift in Sources */,

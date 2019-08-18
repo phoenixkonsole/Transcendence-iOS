@@ -123,7 +123,7 @@ class NodeSelectorViewController : UIViewController, Trackable {
             textField.addTarget(self, action: #selector(self.ipAddressDidChange(textField:)), for: .editingChanged)
         }
         alert.addTextField { textField in
-            textField.placeholder = "8333"
+            textField.placeholder = "56740"
             textField.keyboardType = .numberPad
             textField.keyboardAppearance = .dark
         }

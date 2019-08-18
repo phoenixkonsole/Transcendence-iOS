@@ -40,7 +40,7 @@ struct C {
     static let feedbackEmail = "support@hodlwallet.co"
     static let reviewLink = "https://itunes.apple.com/app/hodl-wallet/id1382342568?action=write-review"
     static var standardPort: Int {
-        return E.isTestnet ? 18333 : 8333
+        return E.isTestnet ? 18333 : 56740
     }
     static let feeLimit: UInt64 = 1200000
     static let byteShift: UInt64 = 1000
