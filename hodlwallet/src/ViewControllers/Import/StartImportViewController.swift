@@ -158,13 +158,13 @@ class StartImportViewController : UIViewController {
         var utxos = [SimpleUTXO]()
         var key = key
         
-        guard let bech32Address = key.address() else { return }
+//        guard let bech32Address = key.address() else { return }
         guard let legacyAddress = key.legacyAddress() else { return }
         
         let dispatchGroup = DispatchGroup()
         dispatchGroup.enter()
         present(balanceActivity, animated: true, completion: {
-            for (_, address) in [bech32Address, legacyAddress].enumerated() {
+            for (_, address) in [legacyAddress].enumerated() {
                 dispatchGroup.enter()
                 
                 let utxoUrlString = String(format: (E.isTestnet ? utxoApiTestnetURL : utxoApiURL), address)

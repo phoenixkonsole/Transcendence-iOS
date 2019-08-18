@@ -224,7 +224,7 @@ class ModalPresenter : Subscriber, Trackable {
         case .send:
             return makeSendView()
         case .receive:
-            return receiveView(isRequestAmountVisible: true)
+            return receiveView(isRequestAmountVisible: true,legacyAddress: true)
         case .menu:
             return menuViewController()
         case .loginScan:

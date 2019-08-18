@@ -170,7 +170,14 @@ class AccountViewController : UIViewController, Subscriber {
                 self.hideLoadingView()
             }
         })
-        store.subscribe(self, selector: { $0.isLoginRequired != $1.isLoginRequired }, callback: { self.isLoginRequired = $0.isLoginRequired })
+        store.subscribe(self, selector: { $0.isLoginRequired != $1.isLoginRequired }, callback: { self.isLoginRequired = $0.isLoginRequired
+            if(!self.isLoginRequired){
+            self.store.trigger(name: .rescan)
+                self.transactionsTableView.isSyncingViewVisible = true
+
+            }
+
+        })
         store.subscribe(self, name: .showStatusBar, callback: { _ in
             self.shouldShowStatusBar = true
         })
@@ -214,6 +221,7 @@ class AccountViewController : UIViewController, Subscriber {
             if !self.didEndLoading {
                 self.showLoadingView()
             }
+
         })
     }
 

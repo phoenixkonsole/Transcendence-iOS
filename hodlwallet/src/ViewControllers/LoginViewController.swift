@@ -139,8 +139,41 @@ class LoginViewController : UIViewController, Subscriber, Trackable {
         if !isResetting {
             lockIfNeeded()
         }
+      
     }
-
+    private func showSyncView() {
+        guard let window = UIApplication.shared.keyWindow else { return }
+        let mask = UIView(color: .transparentBlack)
+        mask.alpha = 0.0
+        window.addSubview(mask)
+        mask.constrain(toSuperviewEdges: nil)
+        
+        let syncView = SyncingView()
+        syncView.backgroundColor = .darkGray
+        syncView.layer.cornerRadius = 4.0
+        syncView.layer.masksToBounds = true
+        
+        store.subscribe(self, selector: { $0.walletState.syncProgress != $1.walletState.syncProgress },
+                        callback: { state in
+                            syncView.timestamp = state.walletState.lastBlockTimestamp
+                            syncView.progress = CGFloat(state.walletState.syncProgress)
+        })
+        mask.addSubview(syncView)
+        syncView.constrain([
+            syncView.leadingAnchor.constraint(equalTo: window.leadingAnchor, constant: C.padding[2]),
+            syncView.topAnchor.constraint(equalTo: window.topAnchor, constant: 136.0 + C.padding[2]),
+            syncView.trailingAnchor.constraint(equalTo: window.trailingAnchor, constant: -C.padding[2]),
+            syncView.heightAnchor.constraint(equalToConstant: 88.0) ])
+        
+        UIView.animate(withDuration: C.animationDuration, animations: {
+            mask.alpha = 1.0
+        })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+            mask.removeFromSuperview()
+            self.dismiss(animated: true, completion: nil)
+        })
+    }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         unlockTimer?.invalidate()
