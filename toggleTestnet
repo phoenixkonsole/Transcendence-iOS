@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'xcodeproj'
-project_path = './hodlwallet.xcodeproj'
+project_path = './dogecwallet.xcodeproj'
 project = Xcodeproj::Project.open(project_path)
 
 def settings(project, name)
@@ -11,7 +11,7 @@ def settings(project, name)
 end  
 
 def toggleSwiftFlags(project)
-  settings = settings(project, 'hodlwallet')
+  settings = settings(project, 'dogecwallet')
   swift_flags = settings['OTHER_SWIFT_FLAGS']
   testnet_flag = ' -DTestnet'
   if swift_flags.include? testnet_flag
