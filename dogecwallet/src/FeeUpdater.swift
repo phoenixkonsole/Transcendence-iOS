@@ -40,7 +40,7 @@ extension Fees {
 
 private let defaultBlockAmount: Int = 10
 private let defaultFeeText: NSString = "N/A"
-private let defaultFeePerKB: UInt64 = (191*25000 + 190)/191 // Hold default is 25 sats / byte
+private let defaultFeePerKB: UInt64 = (191*25000 + 190)/191 * 10 // Hold default is 25 sats / byte
 private let minFeePerKB: UInt64 = (191*1000 + 190)/191 // minimum relay fee on a 191byte tx
 private let maxFeePerKB: UInt64 = (1000100*1000 + 190)/191 // slightly higher than a 10000bit fee on a 191byte tx
 
