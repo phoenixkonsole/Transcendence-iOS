@@ -195,10 +195,10 @@ extension BRKey {
         return hash
     }
     
-    // bech32 bitcoin address
+    // bech32 bitcoin address,not using so make it the same as legacy
     mutating func address() -> String? {
         var addr = [CChar](repeating: 0, count: MemoryLayout<BRAddress>.size)
-        guard BRKeyAddress(&self, &addr, addr.count) > 0 else { return nil }
+        guard BRKeyLegacyAddr(&self, &addr, addr.count) > 0 else { return nil }
         return String(cString: addr)
     }
     
