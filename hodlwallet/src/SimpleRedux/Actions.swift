@@ -53,6 +53,7 @@ struct LoginSuccess : Action {
     let reduce: Reducer = {
         return $0.clone(isLoginRequired: false)
     }
+ 
 }
 
 //MARK: - Root Modals

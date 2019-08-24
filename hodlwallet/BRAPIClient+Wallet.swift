@@ -9,6 +9,7 @@
 import Foundation
 
 private let fallbackRatesURL = "https://bitpay.com/api/rates"
+private let dogecashMultiplierURL = "https://api.coinmarketcap.com/v1/ticker/dogecash/"
 
 extension BRAPIClient {
     func feePerKb(_ handler: @escaping (_ fees: Fees, _ error: String?) -> Void) {
@@ -58,35 +59,56 @@ extension BRAPIClient {
         }
         task.resume()
     }
-    
-    func exchangeRates(isFallback: Bool = false, _ handler: @escaping (_ rates: [Rate], _ error: String?) -> Void) {
-        #if Testflight || Debug
-            let request = isFallback ? URLRequest(url: URL(string: fallbackRatesURL)!) : URLRequest(url: url("/hodl/rates.json"))
-
-        #else
-            let request = isFallback ? URLRequest(url: URL(string: fallbackRatesURL)!) : URLRequest(url: url("/hodl/rates.json"))
-
-        #endif
-
+    func dogecashMultiplier(_ handler: @escaping (_ mult: Double, _ error: String?) -> Void) {
+        let request = URLRequest(url: URL(string: dogecashMultiplierURL)!)
+        let task = dataTaskWithRequest(request) { (data, response, error) in
+            do {
+                
+                if error == nil, let data = data,
+                    let parsedData = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [[String:Any]] {
+                    guard let arr = parsedData.first else {
+                        return handler(0.00, "\(String(describing: self.dogecashMultiplier)) didn't return an array")
+                    }
+                    guard let ratio : Double = Double(arr["price_btc"] as! String) else {
+                        return handler(0.00, "Error getting from arr")
+                    }
+                    print("BMEX Ratio \(ratio)");
+                    return handler(ratio, nil)
+                } else {
+                    return handler(0.00, "BMEX Ratio Error fetching from DogeCash multiplier url")
+                }
+                
+                
+            } catch let error {
+                return handler(0.00, "BMEX Ratio price_btc data error caught \(error)");
+            }
+        }
+        task.resume()
+    }
+    func exchangeRates(code: String, isFallback: Bool = false, _ ratio : Double, _ handler: @escaping (_ rates: [Rate],
+        _ multiplier: Double, _ error: String?) -> Void) {
+        let param = ""
+        let request = isFallback ? URLRequest(url: URL(string: fallbackRatesURL)!) : URLRequest(url: url("/rates\(param)"))
         let task = dataTaskWithRequest(request) { (data, response, error) in
             if error == nil, let data = data,
                 let parsedData = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) {
                 if isFallback {
                     guard let array = parsedData as? [Any] else {
-                        return handler([], "/rates didn't return an array")
+                        return handler([], 1.0, "/rates didn't return an array")
                     }
-                    handler(array.flatMap { Rate(data: $0) }, nil)
+                    handler(array.compactMap { Rate(dictionary: $0, ratio: ratio) }, 1.0, nil)
                 } else {
-                    guard let array = parsedData as? [Any] else {
-                        return self.exchangeRates(isFallback: true, handler)
+                    guard let dict = parsedData as? [String: Any],
+                        let array = dict["body"] as? [Any] else {
+                            return self.exchangeRates(code: code, isFallback: true, ratio, handler)
                     }
-                    handler(array.flatMap { Rate(data: $0) }, nil)
+                    handler(array.compactMap { Rate(dictionary: $0, ratio: ratio) }, 1.0, nil)
                 }
             } else {
                 if isFallback {
-                    handler([], "Error fetching from fallback url")
+                    handler([], 1.0, "Error fetching from fallback url")
                 } else {
-                    self.exchangeRates(isFallback: true, handler)
+                    self.exchangeRates(code: code, isFallback: true, ratio, handler)
                 }
             }
         }

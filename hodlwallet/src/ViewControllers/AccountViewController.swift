@@ -171,11 +171,11 @@ class AccountViewController : UIViewController, Subscriber {
             }
         })
         store.subscribe(self, selector: { $0.isLoginRequired != $1.isLoginRequired }, callback: { self.isLoginRequired = $0.isLoginRequired
-            if(!self.isLoginRequired){
-            self.store.trigger(name: .rescan)
-                self.transactionsTableView.isSyncingViewVisible = true
-
-            }
+//            if(!self.isLoginRequired){
+//            self.store.trigger(name: .rescan)
+//                self.transactionsTableView.isSyncingViewVisible = true
+//
+//            }
 
         })
         store.subscribe(self, name: .showStatusBar, callback: { _ in

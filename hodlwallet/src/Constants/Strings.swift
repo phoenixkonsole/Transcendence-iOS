@@ -15,9 +15,9 @@ enum S {
         static let sat = "SAT"
         static var btc: String {
             if  #available(iOS 10, *) {
-                return "₿"
+                return "Ð"
             } else {
-                return "Ƀ"
+                return "Ð"
             }
         }
         static let narrowSpace = "\u{2009}"
@@ -32,7 +32,7 @@ enum S {
             case 5:
                 return "\(S.Symbols.narrowSpace)(m\(S.Symbols.btc))"
             case 8:
-                return "BTC\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
+                return "DOGEC\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
             default:
                 return "\(S.Symbols.bits)"
             }
@@ -232,7 +232,7 @@ enum S {
         static let defaultWalletName = NSLocalizedString("AccountHeader.defaultWalletName", value:"My Wallet", comment: "Default wallet name")
         static let manageButtonName = NSLocalizedString("AccountHeader.manageButtonName", value:"MANAGE", comment: "Manage wallet button title")
         static let equals = NSLocalizedString("AccountHeader.equals", value:"=", comment: "Equals symbol")
-        static let btcLabel = NSLocalizedString("AccountHeader.btcLabel", value: "1 BTC", comment: "BTC ")
+        static let btcLabel = NSLocalizedString("AccountHeader.btcLabel", value: "1 DOGEC", comment: "DOGEC ")
     }
 
     enum VerifyPin {
