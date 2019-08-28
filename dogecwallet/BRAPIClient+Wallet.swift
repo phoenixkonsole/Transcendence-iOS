@@ -13,53 +13,14 @@ private let dogecashMultiplierURL = "https://api.coinmarketcap.com/v1/ticker/dog
 
 extension BRAPIClient {
     func feePerKb(_ handler: @escaping (_ fees: Fees, _ error: String?) -> Void) {
-        #if Testflight || Debug
-            let req = URLRequest(url: url("/hodl/fee-estimator.json"))
-        #else
-            let req = URLRequest(url: url("/hodl/fee-estimator.json"))
-        #endif
 
-        let task = self.dataTaskWithRequest(req) { (data, response, err) -> Void in
-            var fastestFee = Fees.defaultFees.fastest
-            var regularFee = Fees.defaultFees.regular
-            var economyFee = Fees.defaultFees.economy
-       var errStr: String? = nil
-//            if err == nil {
-//                do {
-//                    let parsedObject: Any? = try JSONSerialization.jsonObject(
-//                        with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-//                    if let top = parsedObject as? NSDictionary,
-//                        let fastest = top["fastest_sat_per_kilobyte"] as? NSNumber,
-//                        let regular = top["normal_sat_per_kilobyte"] as? NSNumber,
-//                        let economy = top["slow_sat_per_kilobyte"] as? NSNumber,
-//                        let _ = top["fastest_time"] as? NSNumber,
-//                        let _ = top["normal_time"] as? NSNumber,
-//                        let _ = top["slow_time"] as? NSNumber,
-//                        let fastestTimeText = top["fastest_time_text"] as? NSString,
-//                        let regularTimeText = top["normal_time_text"] as? NSString,
-//                        let economyTimeText = top["slow_time_text"] as? NSString,
-//                        let fastestBlocks = top["fastest_blocks"] as? NSNumber,
-//                        let regularBlocks = top["normal_blocks"] as? NSNumber,
-//                        let economyBlocks = top["slow_blocks"] as? NSNumber {
-//                        fastestFee = FeeData(sats: fastest.uint64Value, time: fastestTimeText, blocks: fastestBlocks.intValue)
-//                        regularFee = FeeData(sats: regular.uint64Value, time: regularTimeText, blocks: regularBlocks.intValue)
-//                        economyFee = FeeData(sats: economy.uint64Value, time: economyTimeText, blocks: economyBlocks.intValue)
-//                    }
-//                } catch (let e) {
-//                    self.log("fee-per-kb: error parsing json \(e)")
-//                }
-//                if fastestFee.sats == 0 || regularFee.sats == 0 || economyFee.sats == 0 {
-//                    errStr = "invalid json"
-//                }
-//            }
-//            else {
-//                self.log("fee-per-kb network error: \(String(describing: err))")
-//                errStr = "bad network connection"
-//            }
+        let fastestFee = Fees.defaultFees.fastest
+            let regularFee = Fees.defaultFees.regular
+            let economyFee = Fees.defaultFees.economy
+       let errStr: String? = nil
             handler(Fees(fastest: fastestFee, regular: regularFee, economy: economyFee), errStr)
         }
-        task.resume()
-    }
+    
     func dogecashMultiplier(_ handler: @escaping (_ mult: Double, _ error: String?) -> Void) {
         let request = URLRequest(url: URL(string: dogecashMultiplierURL)!)
         let task = dataTaskWithRequest(request) { (data, response, error) in
