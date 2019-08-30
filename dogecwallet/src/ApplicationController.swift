@@ -247,6 +247,7 @@ class ApplicationController : Subscriber, Trackable {
         accountViewController?.sendCallback = { self.store.perform(action: RootModalActions.Present(modal: .send)) }
         accountViewController?.receiveCallback = { self.store.perform(action: RootModalActions.Present(modal: .receive)) }
         accountViewController?.menuCallback = { self.store.perform(action: RootModalActions.Present(modal: .menu)) }
+
         window.rootViewController = accountViewController
     }
 

@@ -227,6 +227,8 @@ class ModalPresenter : Subscriber, Trackable {
             return receiveView(isRequestAmountVisible: true,legacyAddress: true)
         case .menu:
             return menuViewController()
+        case .addressBook:
+            return menuViewController()
         case .loginScan:
             return nil //The scan view needs a custom presentation
         case .loginAddress:
@@ -310,6 +312,11 @@ class ModalPresenter : Subscriber, Trackable {
         menu.didTapLock = { [weak self, weak menu] in
             menu?.dismiss(animated: true) {
                 self?.store.trigger(name: .lock)
+            }
+        }
+        menu.didTapAddressBook = { [weak self, weak menu] in
+            menu?.dismiss(animated: true) {
+                self?.presentSettings()
             }
         }
         menu.didTapSettings = { [weak self, weak menu] in
@@ -545,7 +552,33 @@ class ModalPresenter : Subscriber, Trackable {
 
         window.rootViewController?.present(nc, animated: true, completion: nil)
     }
-
+    
+    private func presentAddressBook() {
+        guard let walletManager = walletManager else { return }
+        let securityCenter = SecurityCenterViewController(store: store, walletManager: walletManager)
+        let nc = ModalNavigationController(rootViewController: securityCenter)
+        nc.setDefaultStyle()
+        nc.isNavigationBarHidden = true
+        nc.delegate = securityCenterNavigationDelegate
+        securityCenter.didTapPin = { [weak self] in
+            guard let myself = self else { return }
+            let updatePin = UpdatePinViewController(store: myself.store, walletManager: walletManager, type: .update)
+            nc.pushViewController(updatePin, animated: true)
+        }
+        securityCenter.didTapBiometrics = strongify(self) { myself in
+            let biometricsSettings = BiometricsSettingsViewController(walletManager: walletManager, store: myself.store)
+            biometricsSettings.presentSpendingLimit = {
+                myself.pushBiometricsSpendingLimit(onNc: nc)
+            }
+            nc.pushViewController(biometricsSettings, animated: true)
+        }
+        securityCenter.didTapPaperKey = { [weak self] in
+            self?.presentWritePaperKey(fromViewController: nc)
+        }
+        
+        window.rootViewController?.present(nc, animated: true, completion: nil)
+    }
+    
     private func pushBiometricsSpendingLimit(onNc: UINavigationController) {
         guard let walletManager = walletManager else { return }
 

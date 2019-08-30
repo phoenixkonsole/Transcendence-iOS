@@ -55,6 +55,7 @@ enum RootModal {
     case send
     case receive
     case menu
+    case addressBook
     case loginAddress
     case loginScan
     case manageWallet

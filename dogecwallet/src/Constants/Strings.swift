@@ -387,6 +387,7 @@ enum S {
         static let settings = NSLocalizedString("MenuButton.settings", value:"Settings", comment: "Menu button title")
         static let lock = NSLocalizedString("MenuButton.lock", value:"Lock Wallet", comment: "Menu button title")
         static let buy = NSLocalizedString("MenuButton.buy", value:"Buy Bitcoin", comment: "Buy bitcoin title")
+        static let addressbook = NSLocalizedString("MenuButton.addressbook", value:"Address Book", comment: "Address book title")
     }
 
     enum MenuViewController {
