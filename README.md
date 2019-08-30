@@ -23,6 +23,7 @@ Simplicity and ease-of-use is **DogeWallet**'s core design principle. A simple r
 - Save a memo for each transaction (off-chain)
 - Supports importing [password protected](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) paper wallets
 - Supports ["Payment protocol"](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki) payee identity certification
+- Key Derivation based on BIP32 ,will be updated to use BIP44/BIP39 later on,to be inline with core wallet
 
 ### Localization
 
