@@ -53,8 +53,6 @@
 		22C431341DF89DFE0017CAEA /* BRCoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431331DF89DFE0017CAEA /* BRCoderTests.swift */; };
 		22C431361DF8A6DF0017CAEA /* BRAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */; };
 		22E773041EE7813000397E0E /* Bonjour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E773031EE7813000397E0E /* Bonjour.swift */; };
-		5A9C0DA92319B6ED0030CBEB /* AdressBookTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9C0DA72319B6ED0030CBEB /* AdressBookTableVC.swift */; };
-		5A9C0DAA2319B6ED0030CBEB /* AddressBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9C0DA82319B6ED0030CBEB /* AddressBookVC.swift */; };
 		5AA31E272309AD7E00749434 /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E0E2309AD7E00749434 /* keccak.c */; };
 		5AA31E282309AD7E00749434 /* aes_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E102309AD7E00749434 /* aes_helper.c */; };
 		5AA31E292309AD7E00749434 /* simd.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E132309AD7E00749434 /* simd.c */; };
@@ -670,8 +668,6 @@
 		22C431331DF89DFE0017CAEA /* BRCoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRCoderTests.swift; sourceTree = "<group>"; };
 		22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRAPIClientTests.swift; sourceTree = "<group>"; };
 		22E773031EE7813000397E0E /* Bonjour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bonjour.swift; sourceTree = "<group>"; };
-		5A9C0DA72319B6ED0030CBEB /* AdressBookTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdressBookTableVC.swift; path = dogecwallet/AdressBookTableVC.swift; sourceTree = SOURCE_ROOT; };
-		5A9C0DA82319B6ED0030CBEB /* AddressBookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressBookVC.swift; path = dogecwallet/AddressBookVC.swift; sourceTree = SOURCE_ROOT; };
 		5AA31E0C2309AD7E00749434 /* quark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quark.h; sourceTree = "<group>"; };
 		5AA31E0E2309AD7E00749434 /* keccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keccak.c; sourceTree = "<group>"; };
 		5AA31E0F2309AD7E00749434 /* sph_bmw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_bmw.h; sourceTree = "<group>"; };
@@ -1830,15 +1826,6 @@
 			path = libbz2;
 			sourceTree = "<group>";
 		};
-		5A9C0DA62319B6E00030CBEB /* AddressBook */ = {
-			isa = PBXGroup;
-			children = (
-				5A9C0DA82319B6ED0030CBEB /* AddressBookVC.swift */,
-				5A9C0DA72319B6ED0030CBEB /* AdressBookTableVC.swift */,
-			);
-			path = AddressBook;
-			sourceTree = "<group>";
-		};
 		5AA31E0D2309AD7E00749434 /* sha3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2932,7 +2919,6 @@
 		CE20C8EF1DBAF6D300C8397A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5A9C0DA62319B6E00030CBEB /* AddressBook */,
 				CE1E5F241EF081F300BD0F72 /* Import */,
 				CEEC70841E90CCA600EF788E /* Settings */,
 				CEB909F81E5FF20A001804DC /* Recover */,
@@ -3995,7 +3981,6 @@
 				CE4B6C1A1E219CA600CF935B /* WalletCoordinator.swift in Sources */,
 				CE6D0E5C1E14BFA700137DF1 /* KeyboardNotificationInfo.swift in Sources */,
 				CEA05CC31F21B53C00D850F0 /* FeeSelector.swift in Sources */,
-				5A9C0DAA2319B6ED0030CBEB /* AddressBookVC.swift in Sources */,
 				CE20C8F21DBAF71500C8397A /* ApplicationController.swift in Sources */,
 				CEC4CF071F0C48DD00E5C82E /* StartWipeWalletViewController.swift in Sources */,
 				7528D2981ECF655500925DBC /* PaymentProtocol.swift in Sources */,
@@ -4156,7 +4141,6 @@
 				22A9A9541DF61945000F0016 /* BRReplicatedKVStore.swift in Sources */,
 				CE6B6B4A1E54C0CB00B31405 /* SecurityCenterCell.swift in Sources */,
 				CED811AA1EB2B2D1003A8D1E /* SharedConstants.swift in Sources */,
-				5A9C0DA92319B6ED0030CBEB /* AdressBookTableVC.swift in Sources */,
 				CE36454C1E7B42850079D0CF /* DarkDecimalPad.swift in Sources */,
 				CE5F21D91E4A922700C47B8E /* DismissLoginAnimator.swift in Sources */,
 				CECCE5A51E02408300D99448 /* UIView+FrameChangeBlocking.swift in Sources */,
