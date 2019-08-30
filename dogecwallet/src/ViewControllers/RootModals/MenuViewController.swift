@@ -15,13 +15,12 @@ class MenuViewController : UIViewController, Trackable {
     var didTapSupport: (() -> Void)?
     var didTapSettings: (() -> Void)?
     var didTapLock: (() -> Void)?
-    var didTapAddressBook: (() -> Void)?
     var didTapBuy: (() -> Void)?
 
     //MARK: - Private
     fileprivate let buttonHeight: CGFloat = 72.0
     fileprivate let buttons: [MenuButton] = {
-        let types: [MenuButtonType] = [.security, .support, .settings, .lock, .addressbook]
+        let types: [MenuButtonType] = [.security, .support, .settings, .lock]
         return types.flatMap {
             return MenuButton(type: $0)
         }
@@ -68,8 +67,6 @@ class MenuViewController : UIViewController, Trackable {
             didTapSettings?()
         case .lock:
             didTapLock?()
-        case .addressbook:
-            didTapAddressBook?()
         case .buy:
             saveEvent("menu.didTapBuyBitcoin")
             didTapBuy?()

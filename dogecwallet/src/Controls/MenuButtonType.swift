@@ -12,7 +12,6 @@ enum MenuButtonType {
     case security
     case support
     case settings
-    case addressbook
     case lock
     case buy
 
@@ -26,8 +25,6 @@ enum MenuButtonType {
             return S.MenuButton.settings
         case .lock:
             return S.MenuButton.lock
-        case .addressbook:
-            return S.MenuButton.addressbook
         case .buy:
             return S.MenuButton.buy
         }
@@ -43,8 +40,6 @@ enum MenuButtonType {
             return #imageLiteral(resourceName: "Settings")
         case .lock:
             return #imageLiteral(resourceName: "Lock")
-        case .addressbook:
-            return #imageLiteral(resourceName: "BuyBitcoin")
         case .buy:
             return #imageLiteral(resourceName: "BuyBitcoin")
         }
