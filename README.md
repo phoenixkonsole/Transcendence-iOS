@@ -1,10 +1,10 @@
-## The easy and secure dogecash wallet
+## The easy and secure transcendence wallet
 
-DogeWallet is the best way to get started with dogecash. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users.
+DogeWallet is the best way to get started with transcendence. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users.
 
 ### Completely decentralized
 
- **DogeWallet** is a standalone bitcoin client. It connects directly to the dogecash network using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, and doesn't rely on servers that can be hacked or disabled. Even if Bitstop loses its grip and disappears, the app will continue to function, allowing users to access their money at any time.
+ **DogeWallet** is a standalone bitcoin client. It connects directly to the transcendence network using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, and doesn't rely on servers that can be hacked or disabled. Even if Bitstop loses its grip and disappears, the app will continue to function, allowing users to access their money at any time.
 
 ### Cutting-edge security
 
@@ -57,4 +57,4 @@ Any jailbreak app can grant itself access to every other app's keychain data. Th
 
 **Hodl** is open source and available under the terms of the MIT license.
 
-Source code is available at https://github.com/dogecash/dogec-wallet-ios
+Source code is available at https://github.com/transcendence/dogec-wallet-ios

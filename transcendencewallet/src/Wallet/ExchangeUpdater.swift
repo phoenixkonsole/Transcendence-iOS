@@ -23,7 +23,7 @@ class ExchangeUpdater : Subscriber {
     }
     
     func refresh(completion: @escaping () -> Void) {
-        walletManager.apiClient?.dogecashMultiplier{multiplier, error in
+        walletManager.apiClient?.transcendenceMultiplier{multiplier, error in
             guard let ratio_to_btc : Double = multiplier else { completion(); return }
             self.walletManager.apiClient?.exchangeRates(code: "DOGEC", isFallback: false, ratio_to_btc, { rates,
                 ratio_to_btc, error in

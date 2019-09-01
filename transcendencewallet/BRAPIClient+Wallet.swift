@@ -9,7 +9,7 @@
 import Foundation
 
 private let fallbackRatesURL = "https://bitpay.com/api/rates"
-private let dogecashMultiplierURL = "https://api.coinmarketcap.com/v1/ticker/dogecash/"
+private let transcendenceMultiplierURL = "https://api.coinmarketcap.com/v1/ticker/teloscoin/"
 
 extension BRAPIClient {
     func feePerKb(_ handler: @escaping (_ fees: Fees, _ error: String?) -> Void) {
@@ -21,15 +21,15 @@ extension BRAPIClient {
             handler(Fees(fastest: fastestFee, regular: regularFee, economy: economyFee), errStr)
         }
     
-    func dogecashMultiplier(_ handler: @escaping (_ mult: Double, _ error: String?) -> Void) {
-        let request = URLRequest(url: URL(string: dogecashMultiplierURL)!)
+    func transcendenceMultiplier(_ handler: @escaping (_ mult: Double, _ error: String?) -> Void) {
+        let request = URLRequest(url: URL(string: transcendenceMultiplierURL)!)
         let task = dataTaskWithRequest(request) { (data, response, error) in
             do {
                 
                 if error == nil, let data = data,
                     let parsedData = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [[String:Any]] {
                     guard let arr = parsedData.first else {
-                        return handler(0.00, "\(String(describing: self.dogecashMultiplier)) didn't return an array")
+                        return handler(0.00, "\(String(describing: self.transcendenceMultiplier)) didn't return an array")
                     }
                     guard let ratio : Double = Double(arr["price_btc"] as! String) else {
                         return handler(0.00, "Error getting from arr")
