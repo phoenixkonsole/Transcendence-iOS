@@ -73,7 +73,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>co.dogecwallet</string>
+			<string>co.transcendencewallet</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>bread</string>

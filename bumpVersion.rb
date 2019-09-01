@@ -5,10 +5,10 @@
 # This will increment the CFBundleVersion of all of the required targets by one
 # 
 require 'xcodeproj'
-project_path = './dogecwallet.xcodeproj'
+project_path = './transcendencewallet.xcodeproj'
 project = Xcodeproj::Project.open(project_path)
 
-desiredTargets = ['dogecwallet', 'dogecwallet WatchKit Extension', 'dogecwallet WatchKit App', 'TodayExtension', 'NotificationServiceExtension', 'MessagesExtension']
+desiredTargets = ['transcendencewallet', 'transcendencewallet WatchKit Extension', 'transcendencewallet WatchKit App', 'TodayExtension', 'NotificationServiceExtension', 'MessagesExtension']
 targets = project.native_targets.select do |target|
   desiredTargets.include? target.name
 end

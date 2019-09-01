@@ -15,15 +15,15 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "75A2A78F1DA5934300A983D8"
-               BuildableName = "dogecwallet.app"
-               BlueprintName = "dogecwallet"
-               ReferencedContainer = "container:dogecwallet.xcodeproj">
+               BuildableName = "transcendencewallet.app"
+               BlueprintName = "transcendencewallet"
+               ReferencedContainer = "container:transcendencewallet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Screenshots"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -32,20 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEA7E67A1F09A9D2001F8C27"
-               BuildableName = "Screenshots.xctest"
-               BlueprintName = "Screenshots"
-               ReferencedContainer = "container:dogecwallet.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "75A2A7A31DA5934300A983D8"
-               BuildableName = "dogecwalletTests.xctest"
-               BlueprintName = "dogecwalletTests"
-               ReferencedContainer = "container:dogecwallet.xcodeproj">
+               BuildableName = "transcendencewalletTests.xctest"
+               BlueprintName = "transcendencewalletTests"
+               ReferencedContainer = "container:transcendencewallet.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -53,9 +43,19 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "75A2A7AE1DA5934300A983D8"
-               BuildableName = "dogecwalletUITests.xctest"
-               BlueprintName = "dogecwalletUITests"
-               ReferencedContainer = "container:dogecwallet.xcodeproj">
+               BuildableName = "transcendencewalletUITests.xctest"
+               BlueprintName = "transcendencewalletUITests"
+               ReferencedContainer = "container:transcendencewallet.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CEA7E67A1F09A9D2001F8C27"
+               BuildableName = "Screenshots.xctest"
+               BlueprintName = "Screenshots"
+               ReferencedContainer = "container:transcendencewallet.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -63,18 +63,19 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75A2A78F1DA5934300A983D8"
-            BuildableName = "dogecwallet.app"
-            BlueprintName = "dogecwallet"
-            ReferencedContainer = "container:dogecwallet.xcodeproj">
+            BuildableName = "transcendencewallet.app"
+            BlueprintName = "transcendencewallet"
+            ReferencedContainer = "container:transcendencewallet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Screenshots"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = "en"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -86,16 +87,23 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75A2A78F1DA5934300A983D8"
-            BuildableName = "dogecwallet.app"
-            BlueprintName = "dogecwallet"
-            ReferencedContainer = "container:dogecwallet.xcodeproj">
+            BuildableName = "transcendencewallet.app"
+            BlueprintName = "transcendencewallet"
+            ReferencedContainer = "container:transcendencewallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = "disable"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -105,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75A2A78F1DA5934300A983D8"
-            BuildableName = "dogecwallet.app"
-            BlueprintName = "dogecwallet"
-            ReferencedContainer = "container:dogecwallet.xcodeproj">
+            BuildableName = "transcendencewallet.app"
+            BlueprintName = "transcendencewallet"
+            ReferencedContainer = "container:transcendencewallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -115,7 +123,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Testflight"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

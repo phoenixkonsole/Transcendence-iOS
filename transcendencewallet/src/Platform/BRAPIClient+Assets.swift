@@ -69,7 +69,7 @@ open class AssetArchive {
         // Disable bundle update, we dont use it,
         // this fixes the issue
         // [AssetArchive] could not get asset versions. error: malformedDataError
-        // Bundle hodl-frontend-staging ran update. err: Optional(dogecwallet.BRAPIClientError.malformedDataError)
+        // Bundle hodl-frontend-staging ran update. err: Optional(transcendencewallet.BRAPIClientError.malformedDataError)
         // ------------------------------------------------------------------------------
         // apiClient.getAssetVersions(name) { (versions, err) in
         //     DispatchQueue.global(qos: .utility).async {
