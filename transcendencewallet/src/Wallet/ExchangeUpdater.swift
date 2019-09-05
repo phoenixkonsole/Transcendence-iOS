@@ -25,13 +25,13 @@ class ExchangeUpdater : Subscriber {
     func refresh(completion: @escaping () -> Void) {
         walletManager.apiClient?.transcendenceMultiplier{multiplier, error in
             guard let ratio_to_btc : Double = multiplier else { completion(); return }
-            self.walletManager.apiClient?.exchangeRates(code: "DOGEC", isFallback: false, ratio_to_btc, { rates,
+            self.walletManager.apiClient?.exchangeRates(code: "TELOS", isFallback: false, ratio_to_btc, { rates,
                 ratio_to_btc, error in
                 
                 guard let currentRate = rates.first( where: { $0.code == self.store.state.defaultCurrencyCode })
                     else {
-                        //Todo: should find a soulution to separate DOGEC and Rate
-                        let aRate = Rate(code: "USD", name: "US Dollar", rate: 0);
+                        //Todo: should find a soulution to separate TELOS and Rate
+                        let aRate = Rate(code: "USD", name: "US Dollar", rate: 0.1);
                         self.store.perform(action: ExchangeRates.setRates(currentRate: aRate, rates: rates))
                         completion();
                         return

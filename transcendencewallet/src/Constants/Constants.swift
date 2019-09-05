@@ -34,7 +34,7 @@ struct C {
     static let maxMoney: UInt64 = 21000000*100000000
     static let satoshis: UInt64 = 100000000
     static let walletQueue = "co.transcendencewallet.walletqueue"
-    static let btcCurrencyCode = "DOGEC"
+    static let btcCurrencyCode = "TELOS"
     static let null = "(null)"
     static let maxMemoLength = 250
     static let feedbackEmail = "support@transcendencewallet.co"

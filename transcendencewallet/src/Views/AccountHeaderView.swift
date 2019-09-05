@@ -267,7 +267,14 @@ class AccountHeaderView : UIView, Subscriber {
         
         rateLabel.isHidden = false
         let rateAmount = Amount(amount: C.satoshis, rate: rate, maxDigits: store.state.maxDigits)
-        rateLabel.text = "\(S.AccountHeader.btcLabel) = \(rateAmount.localCurrency)"
+//        if(rateAmount.rate.code == "USD"){
+//            rateLabel.text = "\(S.AccountHeader.btcLabel) =\(rateAmount.localCurrencyx)"
+//
+//        }
+//        else{
+            rateLabel.text = "\(S.AccountHeader.btcLabel) = \(rateAmount.localCurrency)"
+
+      //}
         
         let amount = Amount(amount: balance, rate: rate, maxDigits: store.state.maxDigits)
         if !hasInitialized || maxDigits != store.state.maxDigits {

@@ -39,7 +39,10 @@ struct Amount {
         guard let string = localFormat.string(from: Double(amount)/100000000.0*rate.rate as NSNumber) else { return "" }
         return string
     }
-
+    var localCurrencyx: String {
+        guard let string = localFormat.string(from: rate.rate as NSNumber) else { return "" }
+        return string
+    }
     func string(forLocal local: Locale) -> String {
         let format = NumberFormatter()
         format.locale = local
@@ -96,6 +99,7 @@ struct Amount {
         format.generatesDecimalNumbers = true
         format.negativeFormat = format.positiveFormat.replacingCharacters(in: format.positiveFormat.range(of: "#")!, with: "-#")
         format.currencySymbol = rate.currencySymbol
+        format.minimumFractionDigits = 3
         return format
     }
 }
