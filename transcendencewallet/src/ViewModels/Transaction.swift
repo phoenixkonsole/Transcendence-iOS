@@ -45,7 +45,14 @@ class Transaction {
         self.blockHeight = tx.pointee.blockHeight == UInt32(INT32_MAX) ? S.TransactionDetails.notConfirmedBlockHeightLabel : "\(tx.pointee.blockHeight)"
 
         let blockHeight = peerManager.lastBlockHeight
+//        if (transactionBlockHeight>blockHeight){
+//            confirms = Int(6)
+//        }
+//        else{
         confirms = transactionBlockHeight > blockHeight ? 0 : Int(blockHeight - transactionBlockHeight) + 1
+        
+    //}
+      
         self.status = makeStatus(tx, wallet: wallet, peerManager: peerManager, confirms: confirms, direction: self.direction)
 
         self.hash = tx.pointee.txHash.description
