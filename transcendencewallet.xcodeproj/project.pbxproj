@@ -53,6 +53,33 @@
 		22C431341DF89DFE0017CAEA /* BRCoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431331DF89DFE0017CAEA /* BRCoderTests.swift */; };
 		22C431361DF8A6DF0017CAEA /* BRAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */; };
 		22E773041EE7813000397E0E /* Bonjour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E773031EE7813000397E0E /* Bonjour.swift */; };
+		5A1A5A512323E5660006E993 /* haval.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A502323E5660006E993 /* haval.c */; };
+		5A1A5A542323E6860006E993 /* sph_bmw.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E0F2309AD7E00749434 /* sph_bmw.h */; };
+		5A1A5A552323E6860006E993 /* sph_cubehash.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E112309AD7E00749434 /* sph_cubehash.h */; };
+		5A1A5A562323E6860006E993 /* sph_blake.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E122309AD7E00749434 /* sph_blake.h */; };
+		5A1A5A572323E6860006E993 /* sph_groestl.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E162309AD7E00749434 /* sph_groestl.h */; };
+		5A1A5A582323E6860006E993 /* sph_shavite.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E172309AD7E00749434 /* sph_shavite.h */; };
+		5A1A5A592323E6860006E993 /* sph_keccak.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E182309AD7E00749434 /* sph_keccak.h */; };
+		5A1A5A5A2323E6860006E993 /* sph_luffa.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E192309AD7E00749434 /* sph_luffa.h */; };
+		5A1A5A5B2323E6860006E993 /* sph_echo.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E1A2309AD7E00749434 /* sph_echo.h */; };
+		5A1A5A5C2323E6860006E993 /* sph_simd.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E202309AD7E00749434 /* sph_simd.h */; };
+		5A1A5A5D2323E6860006E993 /* sph_jh.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E212309AD7E00749434 /* sph_jh.h */; };
+		5A1A5A5E2323E6860006E993 /* sph_skein.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E222309AD7E00749434 /* sph_skein.h */; };
+		5A1A5A5F2323E6860006E993 /* sph_types.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E232309AD7E00749434 /* sph_types.h */; };
+		5A1A5A602323E6860006E993 /* sph_hamsi.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A4A2323DFBD0006E993 /* sph_hamsi.h */; };
+		5A1A5A612323E6860006E993 /* sph_sha2.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A4B2323E14E0006E993 /* sph_sha2.h */; };
+		5A1A5A622323E6860006E993 /* sph_fugue.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A4C2323E1DE0006E993 /* sph_fugue.h */; };
+		5A1A5A632323E6860006E993 /* sph_shabal.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A4D2323E2370006E993 /* sph_shabal.h */; };
+		5A1A5A642323E6860006E993 /* sph_whirlpool.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A4E2323E29F0006E993 /* sph_whirlpool.h */; };
+		5A1A5A652323E6860006E993 /* sph_haval.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A4F2323E3010006E993 /* sph_haval.h */; };
+		5A1A5A672323E6C80006E993 /* fugue.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A662323E6C80006E993 /* fugue.c */; };
+		5A1A5A692323E6DB0006E993 /* hamsi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A682323E6DB0006E993 /* hamsi.c */; };
+		5A1A5A6B2323E6E90006E993 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A6A2323E6E80006E993 /* sha2.c */; };
+		5A1A5A6D2323E6F30006E993 /* shabal.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A6C2323E6F30006E993 /* shabal.c */; };
+		5A1A5A6F2323E70B0006E993 /* hamsi_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A6E2323E70B0006E993 /* hamsi_helper.c */; };
+		5A1A5A712323E7220006E993 /* whirlpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A702323E7220006E993 /* whirlpool.c */; };
+		5A1A5A742323E90C0006E993 /* quark.h in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E0C2309AD7E00749434 /* quark.h */; };
+		5A1A5A762323E9B30006E993 /* sph_sha2big.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A5A752323E9B20006E993 /* sph_sha2big.c */; };
 		5AA31E272309AD7E00749434 /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E0E2309AD7E00749434 /* keccak.c */; };
 		5AA31E282309AD7E00749434 /* aes_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E102309AD7E00749434 /* aes_helper.c */; };
 		5AA31E292309AD7E00749434 /* simd.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31E132309AD7E00749434 /* simd.c */; };
@@ -668,6 +695,20 @@
 		22C431331DF89DFE0017CAEA /* BRCoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRCoderTests.swift; sourceTree = "<group>"; };
 		22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRAPIClientTests.swift; sourceTree = "<group>"; };
 		22E773031EE7813000397E0E /* Bonjour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bonjour.swift; sourceTree = "<group>"; };
+		5A1A5A4A2323DFBD0006E993 /* sph_hamsi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sph_hamsi.h; sourceTree = "<group>"; };
+		5A1A5A4B2323E14E0006E993 /* sph_sha2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sph_sha2.h; sourceTree = "<group>"; };
+		5A1A5A4C2323E1DE0006E993 /* sph_fugue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sph_fugue.h; sourceTree = "<group>"; };
+		5A1A5A4D2323E2370006E993 /* sph_shabal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sph_shabal.h; sourceTree = "<group>"; };
+		5A1A5A4E2323E29F0006E993 /* sph_whirlpool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sph_whirlpool.h; sourceTree = "<group>"; };
+		5A1A5A4F2323E3010006E993 /* sph_haval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sph_haval.h; sourceTree = "<group>"; };
+		5A1A5A502323E5660006E993 /* haval.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = haval.c; sourceTree = "<group>"; };
+		5A1A5A662323E6C80006E993 /* fugue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fugue.c; sourceTree = "<group>"; };
+		5A1A5A682323E6DB0006E993 /* hamsi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hamsi.c; sourceTree = "<group>"; };
+		5A1A5A6A2323E6E80006E993 /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
+		5A1A5A6C2323E6F30006E993 /* shabal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shabal.c; sourceTree = "<group>"; };
+		5A1A5A6E2323E70B0006E993 /* hamsi_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hamsi_helper.c; sourceTree = "<group>"; };
+		5A1A5A702323E7220006E993 /* whirlpool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = whirlpool.c; sourceTree = "<group>"; };
+		5A1A5A752323E9B20006E993 /* sph_sha2big.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sph_sha2big.c; sourceTree = "<group>"; };
 		5AA31E0C2309AD7E00749434 /* quark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quark.h; sourceTree = "<group>"; };
 		5AA31E0E2309AD7E00749434 /* keccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keccak.c; sourceTree = "<group>"; };
 		5AA31E0F2309AD7E00749434 /* sph_bmw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_bmw.h; sourceTree = "<group>"; };
@@ -1829,6 +1870,14 @@
 		5AA31E0D2309AD7E00749434 /* sha3 */ = {
 			isa = PBXGroup;
 			children = (
+				5A1A5A752323E9B20006E993 /* sph_sha2big.c */,
+				5A1A5A702323E7220006E993 /* whirlpool.c */,
+				5A1A5A6E2323E70B0006E993 /* hamsi_helper.c */,
+				5A1A5A6C2323E6F30006E993 /* shabal.c */,
+				5A1A5A6A2323E6E80006E993 /* sha2.c */,
+				5A1A5A682323E6DB0006E993 /* hamsi.c */,
+				5A1A5A662323E6C80006E993 /* fugue.c */,
+				5A1A5A502323E5660006E993 /* haval.c */,
 				5AA31E0E2309AD7E00749434 /* keccak.c */,
 				5AA31E0F2309AD7E00749434 /* sph_bmw.h */,
 				5AA31E102309AD7E00749434 /* aes_helper.c */,
@@ -1853,6 +1902,12 @@
 				5AA31E232309AD7E00749434 /* sph_types.h */,
 				5AA31E242309AD7E00749434 /* skein.c */,
 				5AA31E252309AD7E00749434 /* echo.c */,
+				5A1A5A4A2323DFBD0006E993 /* sph_hamsi.h */,
+				5A1A5A4B2323E14E0006E993 /* sph_sha2.h */,
+				5A1A5A4C2323E1DE0006E993 /* sph_fugue.h */,
+				5A1A5A4D2323E2370006E993 /* sph_shabal.h */,
+				5A1A5A4E2323E29F0006E993 /* sph_whirlpool.h */,
+				5A1A5A4F2323E3010006E993 /* sph_haval.h */,
 			);
 			path = sha3;
 			sourceTree = "<group>";
@@ -3941,6 +3996,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1A5A742323E90C0006E993 /* quark.h in Sources */,
+				5A1A5A542323E6860006E993 /* sph_bmw.h in Sources */,
+				5A1A5A552323E6860006E993 /* sph_cubehash.h in Sources */,
+				5A1A5A562323E6860006E993 /* sph_blake.h in Sources */,
+				5A1A5A572323E6860006E993 /* sph_groestl.h in Sources */,
+				5A1A5A582323E6860006E993 /* sph_shavite.h in Sources */,
+				5A1A5A592323E6860006E993 /* sph_keccak.h in Sources */,
+				5A1A5A5A2323E6860006E993 /* sph_luffa.h in Sources */,
+				5A1A5A5B2323E6860006E993 /* sph_echo.h in Sources */,
+				5A1A5A5C2323E6860006E993 /* sph_simd.h in Sources */,
+				5A1A5A5D2323E6860006E993 /* sph_jh.h in Sources */,
+				5A1A5A5E2323E6860006E993 /* sph_skein.h in Sources */,
+				5A1A5A5F2323E6860006E993 /* sph_types.h in Sources */,
+				5A1A5A602323E6860006E993 /* sph_hamsi.h in Sources */,
+				5A1A5A612323E6860006E993 /* sph_sha2.h in Sources */,
+				5A1A5A622323E6860006E993 /* sph_fugue.h in Sources */,
+				5A1A5A632323E6860006E993 /* sph_shabal.h in Sources */,
+				5A1A5A642323E6860006E993 /* sph_whirlpool.h in Sources */,
+				5A1A5A652323E6860006E993 /* sph_haval.h in Sources */,
 				CEBF29301EF9D76F005C330A /* Environment.swift in Sources */,
 				CEC6AA4D1DF0741100EE5AFD /* ModalDisplayable.swift in Sources */,
 				CED811E11EB302DA003A8D1E /* WatchData.swift in Sources */,
@@ -4004,6 +4078,7 @@
 				CE20C90E1DBE52B000C8397A /* UIView+BRWAdditions.swift in Sources */,
 				CE6314831E08E5BB00D4AFE0 /* UIView+InitAdditions.swift in Sources */,
 				CEC6AA401DEFC87300EE5AFD /* SendViewController.swift in Sources */,
+				5A1A5A512323E5660006E993 /* haval.c in Sources */,
 				CEAA9E8F1DC074410066731D /* StartPaperPhraseViewController.swift in Sources */,
 				CEC6F8451E886723000795B8 /* PaymentRequest.swift in Sources */,
 				78D3A1D021E41F8A00EFAC99 /* SegwitViewController.swift in Sources */,
@@ -4018,9 +4093,12 @@
 				CECB9DB61E4985CE0081A172 /* LoginBackgroundView.swift in Sources */,
 				CEE6282A1EA98B6D001035AA /* DispatchQueue+Additions.swift in Sources */,
 				CEC6AA3D1DEE687000EE5AFD /* RadialGradientView.swift in Sources */,
+				5A1A5A712323E7220006E993 /* whirlpool.c in Sources */,
 				CEEC70921E95DA4400EF788E /* GradientSwitch.swift in Sources */,
+				5A1A5A762323E9B30006E993 /* sph_sha2big.c in Sources */,
 				CE0CD1591DBFBCF5004023DA /* ModalPresenter.swift in Sources */,
 				CEE20C2F1EA3E5820086F724 /* BlinkingView.swift in Sources */,
+				5A1A5A6D2323E6F30006E993 /* shabal.c in Sources */,
 				CEC6AA441DEFCDE900EE5AFD /* ModalViewController.swift in Sources */,
 				CEEC70831E90C07C00EF788E /* Setting.swift in Sources */,
 				CE4B6C1C1E21A96D00CF935B /* LoadingProgressView.swift in Sources */,
@@ -4033,11 +4111,14 @@
 				CEB909F71E5FE654001804DC /* EnterPhraseCollectionViewController.swift in Sources */,
 				CEF3D2DD1E8CBA790070178E /* LAContext+Extensions.swift in Sources */,
 				CECCE5AE1E04AD6300D99448 /* AddressCell.swift in Sources */,
+				5A1A5A6F2323E70B0006E993 /* hamsi_helper.c in Sources */,
 				CE6BCF5D1EE9E89A0029849C /* CustomTitleView.swift in Sources */,
+				5A1A5A672323E6C80006E993 /* fugue.c in Sources */,
 				5AA31E292309AD7E00749434 /* simd.c in Sources */,
 				CE2DC1391EBC36EE000FE727 /* Prompt.swift in Sources */,
 				CE83DE2A1E9EB7F600D07636 /* SendAmountCell.swift in Sources */,
 				22A9A9521DF61945000F0016 /* BRKVStorePlugin.swift in Sources */,
+				5A1A5A692323E6DB0006E993 /* hamsi.c in Sources */,
 				CEAFC8611E5D5B0500E4FD06 /* SegmentedButton.swift in Sources */,
 				CE30F0E61EB27844004B8EE5 /* PhoneWCSessionManager.swift in Sources */,
 				7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */,
@@ -4149,6 +4230,7 @@
 				CE760EDD1E561DF900EFAC2B /* UpdatePinViewController.swift in Sources */,
 				22A9A9481DF61945000F0016 /* BRBitID.swift in Sources */,
 				5AA31E2A2309AD7E00749434 /* luffa.c in Sources */,
+				5A1A5A6B2323E6E90006E993 /* sha2.c in Sources */,
 				CEBF32F41DDCE12900348FC6 /* AccountFooterView.swift in Sources */,
 				CE9057181DFF0FA8006BA848 /* String+Additions.swift in Sources */,
 				CED341331EF5A5C00014912A /* InAppAlert.swift in Sources */,
@@ -4633,7 +4715,7 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/breadwallet-core",
+					"${SRCROOT}/Modules/breadwallet-core/**",
 					"${SRCROOT}/Modules/breadwallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4647,7 +4729,7 @@
 				CLANG_WARN_COMMA = NO;
 				DEVELOPMENT_TEAM = J829PTGA25;
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/breadwallet-core",
+					"${SRCROOT}/Modules/breadwallet-core/**",
 					"${SRCROOT}/Modules/breadwallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4870,6 +4952,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = transcendencewallet/transcendencewallet.entitlements;
 				DEVELOPMENT_TEAM = 7MG8VQGCM6;
@@ -4890,6 +4974,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = transcendencewallet/transcendencewallet.entitlements;
 				DEVELOPMENT_TEAM = 7MG8VQGCM6;
@@ -5184,6 +5270,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = transcendencewallet/transcendencewallet.entitlements;
 				DEVELOPMENT_TEAM = 7MG8VQGCM6;
@@ -5332,7 +5420,7 @@
 					"BITCOIN_TESTNET=1",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/breadwallet-core",
+					"${SRCROOT}/Modules/breadwallet-core/**",
 					"${SRCROOT}/Modules/breadwallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5496,6 +5584,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = transcendencewallet/transcendencewallet.entitlements;
 				DEVELOPMENT_TEAM = 7MG8VQGCM6;
@@ -5644,7 +5734,7 @@
 					"BITCOIN_TESTNET=1",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/breadwallet-core",
+					"${SRCROOT}/Modules/breadwallet-core/**",
 					"${SRCROOT}/Modules/breadwallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5801,6 +5891,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = transcendencewallet/transcendencewallet.entitlements;
 				DEVELOPMENT_TEAM = 7MG8VQGCM6;
@@ -5942,7 +6034,7 @@
 				CLANG_WARN_COMMA = NO;
 				DEVELOPMENT_TEAM = J829PTGA25;
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/breadwallet-core",
+					"${SRCROOT}/Modules/breadwallet-core/**",
 					"${SRCROOT}/Modules/breadwallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

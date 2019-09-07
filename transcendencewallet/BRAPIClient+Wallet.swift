@@ -37,7 +37,7 @@ extension BRAPIClient {
                     print("BMEX Ratio \(ratio)");
                     return handler(ratio, nil)
                 } else {
-                    return handler(0.00, "BMEX Ratio Error fetching from DogeCash multiplier url")
+                    return handler(0.00, "BMEX Ratio Error fetching from Telos multiplier url")
                 }
                 
                 
