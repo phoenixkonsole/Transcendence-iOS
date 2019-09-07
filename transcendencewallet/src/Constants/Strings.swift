@@ -606,7 +606,7 @@ enum S {
     }
 
     enum Welcome {
-        static let title = NSLocalizedString("Welcome.title", value: "Welcome to Hodl!", comment: "Welcome view title")
+        static let title = NSLocalizedString("Welcome.title", value: "Welcome to TelosWallet!", comment: "Welcome view title")
         static let body = NSLocalizedString("Welcome.body", value: "If you need help, look for the (?) in the top right of most screens.", comment: "Welcome view body text")
     }
     
