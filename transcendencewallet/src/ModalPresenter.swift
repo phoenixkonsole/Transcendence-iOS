@@ -382,35 +382,35 @@ class ModalPresenter : Subscriber, Trackable {
                         myself.topViewController?.present(nc, animated: true, completion: nil)
                     })
                }),
-               Setting(title: S.Settings.legacyAddress, callback: { [weak self] in
-                guard let myself = self else { return }
-                guard let walletManager = myself.walletManager else { return }
-                let nc = ModalNavigationController()
-                nc.setClearNavbar()
-                nc.setGrayStyle()
-                nc.delegate = myself.wipeNavigationDelegate
-                
-                let receiveViewController = ReceiveViewController (wallet: walletManager.wallet!, store: myself.store, isRequestAmountVisible: false, legacyAddress: true)
-                nc.addChildViewController(receiveViewController)
-                nc.transitioningDelegate = myself.modalTransitionDelegate
-                
-                receiveViewController.addCloseNavigationItem(tintColor: .gradientStart)
-                receiveViewController.navigationItem.title = S.Settings.legacyAddressTitle
-                
-                receiveViewController.presentShare = { [weak self] address, image in
-                    guard let root = self?.topViewController else { return }
-                    self?.messagePresenter.presenter = root
-                    self?.messagePresenter.presentShareSheet(text: address, image: image)
-                }
-
-                let faqButton = UIButton.buildFaqButton(store: myself.store, articleId: ArticleIds.receiveBitcoin)
-                faqButton.tintColor = .grayTextTint
-                receiveViewController.navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
-                nc.viewControllers = [receiveViewController]
-                settingsNav.dismiss(animated: true, completion: {
-                    myself.topViewController?.present(nc, animated: true, completion: nil)
-                })
-               }),
+//               Setting(title: S.Settings.legacyAddress, callback: { [weak self] in
+//                guard let myself = self else { return }
+//                guard let walletManager = myself.walletManager else { return }
+//                let nc = ModalNavigationController()
+//                nc.setClearNavbar()
+//                nc.setGrayStyle()
+//                nc.delegate = myself.wipeNavigationDelegate
+//                
+//                let receiveViewController = ReceiveViewController (wallet: walletManager.wallet!, store: myself.store, isRequestAmountVisible: false, legacyAddress: true)
+//                nc.addChildViewController(receiveViewController)
+//                nc.transitioningDelegate = myself.modalTransitionDelegate
+//                
+//                receiveViewController.addCloseNavigationItem(tintColor: .gradientStart)
+//                receiveViewController.navigationItem.title = S.Settings.legacyAddressTitle
+//                
+//                receiveViewController.presentShare = { [weak self] address, image in
+//                    guard let root = self?.topViewController else { return }
+//                    self?.messagePresenter.presenter = root
+//                    self?.messagePresenter.presentShareSheet(text: address, image: image)
+//                }
+//
+//                let faqButton = UIButton.buildFaqButton(store: myself.store, articleId: ArticleIds.receiveBitcoin)
+//                faqButton.tintColor = .grayTextTint
+//                receiveViewController.navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
+//                nc.viewControllers = [receiveViewController]
+//                settingsNav.dismiss(animated: true, completion: {
+//                    myself.topViewController?.present(nc, animated: true, completion: nil)
+//                })
+//               }),
             ],
             "Manage": [
                 Setting(title: S.Settings.notifications, accessoryText: {
