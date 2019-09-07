@@ -1,18 +1,18 @@
 ## The easy and secure transcendence wallet
 
-DogeWallet is the best way to get started with transcendence. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users.
+TELOSWallet is the best way to get started with transcendence. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users.
 
 ### Completely decentralized
 
- **DogeWallet** is a standalone bitcoin client. It connects directly to the transcendence network using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, and doesn't rely on servers that can be hacked or disabled. Even if Bitstop loses its grip and disappears, the app will continue to function, allowing users to access their money at any time.
+ **TELOSWallet** is a standalone bitcoin client. It connects directly to the transcendence network using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, and doesn't rely on servers that can be hacked or disabled. Even if Bitstop loses its grip and disappears, the app will continue to function, allowing users to access their money at any time.
 
 ### Cutting-edge security
 
-**DogeWallet** utilizes AES hardware encryption, app sandboxing, and the latest iOS security features to protect users from malware, browser security holes, and even physical theft. Private keys are stored only in the secure enclave of the user's phone, inaccessible to anyone other than the user.
+**TELOSWallet** utilizes AES hardware encryption, app sandboxing, and the latest iOS security features to protect users from malware, browser security holes, and even physical theft. Private keys are stored only in the secure enclave of the user's phone, inaccessible to anyone other than the user.
 
 ### Desgined with new users in mind
 
-Simplicity and ease-of-use is **DogeWallet**'s core design principle. A simple recovery phrase (which we call a paper key) is all that is needed to restore the user's wallet if they ever lose or replace their device. **DogeWallet** is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), which means the user's balance and transaction history can be recovered just from the paper key.
+Simplicity and ease-of-use is **TELOSWallet**'s core design principle. A simple recovery phrase (which we call a paper key) is all that is needed to restore the user's wallet if they ever lose or replace their device. **TELOSWallet** is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), which means the user's balance and transaction history can be recovered just from the paper key.
 
 ### Features
 
